@@ -24,9 +24,9 @@ find_package(geometry_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-include_directories(
-  include
-  )
+# include_directories(
+#   include
+#   )
 
 
 
@@ -41,9 +41,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ADD_LINTER_TESTS
 )
 
-install(DIRECTORY include/
-  DESTINATION include
-)
+# install(DIRECTORY include/
+#   DESTINATION include
+# )
 
 
 
@@ -60,7 +60,7 @@ endif()
 
 
 
-ament_export_include_directories(include)
+# ament_export_include_directories(include)
 ament_export_dependencies(rosidl_default_runtime)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(geometry_msgs)
